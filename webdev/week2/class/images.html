@@ -1,0 +1,38 @@
+<!--basic syntax-->
+<img src="image.jpg" alt="this is an image">
+
+<!--image sizing and scaling-->
+<img src="cat.jpg" alt="a cute cat" width = "300" height = "200">
+
+<!--using CSS to align image on left-->
+<style>
+    .image-align-left {
+        float: left;
+        margin-right: 10px; /*add some space between the image and text */
+    }
+</style>
+
+<p><img src="cat.jpg" alt="a cute cat" class="image-align-left">this is some text that wraps around the image</p>
+
+<!--linking images-->
+<a href="link-to-page.html" target=""_blank> <!--this opens linked page in a new browser or window-->
+    <img src="cat.jpg" alt="clickable cat image">
+</a>
+
+<!--making websites adapt to various screen sizes-->
+<img src="image.jpg" alt="description" style="max-width: 100%;">
+
+<!--displaying images hosted on external websites using full url in src attribute-->
+<img src="https://example.com/image.jpg" alt="external image">
+
+<!--lazy loading to improve page loading performance-->
+<img src="cat.jpg" alt="a cute cat" loading="lazy">
+
+<!--image captioning-->
+<figure>
+    <img src="cat.jpg" alt="a cute cat">
+    <figcaption>this is the picture of a cat with blue eyes</figcaption>
+</figure>
+
+<!--high DPI eg retina display-->
+<img src="cat.jpg" alt="a cute cat" srcset="image.jpg 1x, image@2x.jpg 2x">
