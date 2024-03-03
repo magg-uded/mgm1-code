@@ -1,0 +1,28 @@
+<!-- GET method
+    -appends form data into url in name-value pairs
+    -length of url is limited to 3000 char
+    -never use get to send sensitive data as it will be visible in the url
+    -best for form submissions where user wants to bookmark results
+    -best for non-secure data like query strings in Google
+-->
+<form action="/action_page.php" method="get">
+    <label for="fname">first name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">last name</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="submit">
+</form>
+
+<!-- POST method
+    -appends form data inside body of http request 
+    -data not shown in url
+    -no size limits
+    -form submissions cannot be bookmarked
+-->
+<form action="/action_page.php" method="post">
+    <label for="fname">first name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">last name</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="submit">
+</form>

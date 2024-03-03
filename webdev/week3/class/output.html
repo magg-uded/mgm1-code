@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>output element</h2>
+        <p>output element represents the results of a calculation</p>
+
+        <form action="/action_page.php">
+            <label for="a">0</label>
+            <input type="range" id="a" name="a" value="50" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            <label for="b">100</label>
+            <input type="number" id="b" name="b" value="50" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            =
+            <output name="x" for="a b"></output>
+            <br><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>

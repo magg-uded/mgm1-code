@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--home page html file-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>home-image-links</title>
+        <style>
+            /* styling for gallery */
+            .image-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                grid-gap: 20px;
+            }
+
+            /* styling for images in gallery */
+            .image-grid img {
+                width: 100%;
+                height: auto;
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+            /* css styling for figcaptions */
+            .image-grid figcaption {
+                font-style: italic;
+                text-align: center;
+            }
+
+            /* styling for menu */
+            .menu-item {
+                display: flex;
+                align-items: left;
+                margin-bottom: 10px;
+            }
+
+             .menu-item img {
+                width: 100%;
+                height: auto;
+                margin-right: 10px;
+            }
+
+            .menu-item span {
+                font-weight: normal;
+            }
+
+            .menu-item figcaption {
+                font-style: italic;
+                text-align: center;
+            }
+            /* styling for headings */
+            .heading2 {
+                color: darkblue;
+            }
+        </style>
+    </head>
+    <body>
+        <!--navigation menu-->
+        <nav>
+            <a href="/home">Home</a>
+            <a href="/menu">Menu</a>
+            <a href="/gallery">Gallery</a>
+        </nav>
+
+        <!--home page content-->
+        <div id="home">
+            <h2 class="heading2">Home</h2>
+            <h3>Welcome to Altair Food Technologies!</h3>
+            <hr>
+             <!--link external image-->
+             <div class="image-grid img">
+                <figure>
+                    <img src="https://img.freepik.com/premium-photo/take-away-healthy-food-foil-boxes_123827-17465.jpg?size=626&ext=jpg&ga=GA1.2.667332349.1709408517&semt=ais">
+                    <figcaption>Altair food machine</figcaption>
+                </figure>
+             </div>
+             
+            <p>Altair Technologies is a pioneering global food delivery company, revolutionizing the culinary landscape with its innovative approach and extensive reach. With a commitment to excellence, Altair leverages cutting-edge technology to seamlessly connect consumers with a diverse array of culinary experiences, offering unparalleled convenience and satisfaction.
+            </p>
+            <p>As a leader in the industry, Altair is renowned for its exceptional customer service, relentless focus on quality, and unwavering dedication to customer satisfaction. Through its extensive network of partners and relentless pursuit of innovation, Altair Technologies continues to redefine the food delivery landscape, setting the standard for excellence worldwide.</p>
+        </div>
+
+        <!--menu page content-->
+        <div id="menu">
+            <h2 class="heading2">Menu</h2>
+            <h3>We are proud to partner with some of the best kitchens showcasing what our processed products look like on the tables and menus of millions of homes around the world.</h3>
+            <hr>
+             <!--list of linked menu items-->
+            <div class="menu-item">
+                <figure>
+                    <img src="https://img.freepik.com/free-photo/delicious-batch-cooking-assortment_23-2148765574.jpg?size=626&ext=jpg&ga=GA1.1.667332349.1709408517&semt=ais" alt="Elote dip">
+                    <figcaption>Elote dip</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://img.freepik.com/free-photo/flat-lay-tasty-batch-food-cooked-arrangement_23-2148765564.jpg?size=626&ext=jpg&ga=GA1.1.667332349.1709408517&semt=ais" alt="Oreo delight">
+                    <figcaption>Oreo delight</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://img.freepik.com/free-photo/flat-lay-delicious-batch-cooking-composition_23-2148765585.jpg?size=626&ext=jpg&ga=GA1.1.667332349.1709408517&semt=ais" alt="Shrimp asparagus">
+                    <figcaption>Shrimp asparagus</figcaption>
+                </figure> 
+                <figure>
+                    <img src="https://img.freepik.com/free-photo/top-view-composition-tasty-batch-food-cooked_23-2148765553.jpg?size=626&ext=jpg&ga=GA1.1.667332349.1709408517&semt=ais">
+                    <figcaption>Shrimp avocado garlic bread</figcaption>
+                </figure> 
+            </div>
+            <p>Altair Food Technologies is committed to keeping the world green using a three-pronged approach:</p>
+            <ol>
+                <li>A green basket approach to encourage our suppliers and off-takers to keep it green along the entire production-processing value chain.</li>
+                <li>A healthy soil approach to encourage sustainable direct-from-earth production at both small and large scales.</li>
+                <li>A recycling approach to ensure minimal food losses, conservation of bio-diversity and least pollution policy in production processes.</li>
+            </ol>
+        </div>
+     
+        <!--gallery page content-->
+        <div id="gallery">
+            <h2 class="heading2">Gallery</h2>
+            <h3>Explore how we use climate-smart technology to power food processing</h3>
+            <hr>
+             <!--a grid of external images-->
+            <div class="image-grid">
+                <figure>
+                    <img src="https://ucarecdn.com/15cc849a-146d-4e37-89d2-ed30d182b2fa/-/format/auto/-/preview/3000x3000/-/quality/lighter/" alt="A basket of fresh food">
+                    <figcaption>Let thy food be thy medicine</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://www.wbcsd.org/var/site/storage/images/programs/food-and-nature/59770-53-eng-GB/Food-Nature_i1140.jpg" alt="Healthy soil">
+                    <figcaption>Healthy soils help us optimize production processes</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://www.organicgardener.com.au/sites/default/files/images/articles/Food%20Forest%20by%20Kirsten%20Bresciani.jpg" alt="A green environment for food production">
+                    <figcaption>Recycling helps us keep the world green</figcaption>
+                </figure> 
+            </div>
+            <p>Altair Food Technologies is committed to keeping the world green using a three-pronged approach:</p>
+            <ol>
+                <li>A green basket approach to encourage our suppliers and off-takers to keep it green along the entire production-processing value chain.</li>
+                <li>A healthy soil approach to encourage sustainable direct-from-earth production at both small and large scales.</li>
+                <li>A recycling approach to ensure minimal food losses, conservation of bio-diversity and least pollution policy in production processes.</li>
+            </ol>
+        </div>
+    </body>
+</html>
+    </body>
+</html>

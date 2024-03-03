@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <style>
+        /* CSS for the menu container */
+        #menu {
+            max-width: 800px; /* Limiting the maximum width of the menu */
+            margin: 0 auto; /* Centering the menu horizontally */
+            padding-left: 20px; /* Adding left padding for text alignment */
+        }
+
+        /* CSS for the heading */
+        #menu h3 {
+            text-align: center; /* Centering the heading */
+        }
+
+        /* CSS for the image grid */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            gap: 20px; /* Gap between grid items */
+        }
+
+        /* CSS for the images */
+        .image-grid img {
+            width: 100%; /* Ensuring images fill the grid cells */
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        /* CSS for the figcaptions */
+        .image-grid figcaption {
+            font-style: italic; /* Applying italic font style */
+            text-align: center; /* Centering the captions */
+        }
+
+        /* CSS for the paragraph and list */
+        #menu p, #menu ol {
+            margin-left: 20px; /* Indenting the text to align with images */
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <h3>We are proud to partner with some of the best kitchens showcasing what our processed products look like on the tables and menus of millions of homes around the world.</h3>
+        <hr>
+        <!-- Grid of images -->
+        <div class="image-grid">
+            <figure>
+                <img src="https://img.freepik.com/free-photo/delicious-batch-cooking-assortment_23-2148765574.jpg?size=626&ext=jpg&ga=GA1.1.667332349.1709408517&semt=ais" alt="Elote dip">
+                <figcaption><em>Elote dip</em></figcaption>
+            </figure>
+            <!-- Add more figures for other images -->
+        </div>
+        <!-- Text content -->
+        <p>Altair Food Technologies is committed to keeping the world green using a three-pronged approach:</p>
+        <ol>
+            <li>A green basket approach to encourage our suppliers and off-takers to keep it green along the entire production-processing value chain.</li>
+            <li>A healthy soil approach to encourage sustainable direct-from-earth production at both small and large scales.</li>
+            <li>A recycling approach to ensure minimal food losses, conservation of bio-diversity and least pollution policy in production processes.</li>
+        </ol>
+    </div>
+</body>
+</html>

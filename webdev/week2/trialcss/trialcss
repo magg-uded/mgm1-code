@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu</title>
+        <style>
+            /* CSS for the menu container */
+            #menu {
+                text-align: center;
+                margin: 0 auto; /* Center the menu horizontally */
+                max-width: 800px; /* Limit the width of the menu */
+                padding: 20px; /* Add some padding for spacing */
+            }
+
+            /* CSS for the image grid */
+            .image-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+                justify-items: center; /* Center align items horizontally */
+            }
+
+            /* CSS for the images */
+            .image-grid img {
+                max-width: 100%; /* Ensure images don't exceed their container width */
+                height: auto;
+            }
+
+            /* CSS for the figcaptions */
+            .image-grid figcaption {
+                font-style: italic; /* Make figcaptions italic */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="menu">
+            <h3>We are proud to partner with some of the best kitchens showcasing what our processed products look like on the tables and menus of millions of homes around the world.</h3>
+            <hr>
+            <!-- Image grid -->
+            <div class="image-grid">
+                <figure>
+                    <img src="https://img.freepik.com/free-photo/delicious-batch-cooking-assortment_23-2148765574.jpg?size=626&ext=jpg&ga=GA1.1.667332349.1709408517&semt=ais" alt="Elote dip">
+                    <figcaption><em>Elote dip</em></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://img.freepik.com/free-photo/flat-lay-tasty-batch-food-cooked-arrangement_23-2148765564.jpg?size=626&ext=jpg&ga=GA1.1.667332349.1709408517&semt=ais" alt="Oreo delight">
+                    <figcaption><em>Oreo delight</em></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://img.freepik.com/free-photo/flat-lay-delicious-batch-cooking-composition_23-2148765585.jpg?size=626&ext=jpg&ga=GA1.1.667332349.1709408517&semt=ais" alt="Shrimp asparagus">
+                    <figcaption><em>Shrimp asparagus</em></figcaption>
+                </figure> 
+                <figure>
+                    <img src="https://img.freepik.com/free-photo/top-view-composition-tasty-batch-food-cooked_23-2148765553.jpg?size=626&ext=jpg&ga=GA1.1.667332349.1709408517&semt=ais" alt="Shrimp avocado garlic bread">
+                    <figcaption><em>Shrimp avocado garlic bread</em></figcaption>
+                </figure> 
+            </div>
+            <p>Altair Food Technologies is committed to keeping the world green using a three-pronged approach:</p>
+            <ol>
+                <li>A green basket approach to encourage our suppliers and off-takers to keep it green along the entire production-processing value chain.</li>
+                <li>A healthy soil approach to encourage sustainable direct-from-earth production at both small and large scales.</li>
+                <li>A recycling approach to ensure minimal food losses, conservation of bio-diversity and least pollution policy in production processes.</li>
+            </ol>
+        </div>
+    </body>
+    </html>

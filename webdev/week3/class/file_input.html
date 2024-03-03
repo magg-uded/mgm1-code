@@ -1,0 +1,20 @@
+<!--defines a file-select field and a browser button for file uploads-->
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>show file-select fields</h1>
+
+        <h3>for only one file</h3>
+        <form action="/action_page.php">
+            <label for="myfile">select a file:</label>
+            <input type="file" id="myfile" name="myfile"><br><br>
+            <input type="submit">
+        </form>
+
+        <h3>for multiple files</h3>
+        <form action="/action_page.php">
+            <label for="myfile">select files:</label>
+            <input type="file" id="myfile" name="myfile" multiple><br><br>
+            <input type="submit">
+    </body>
+</html>
