@@ -40,14 +40,29 @@ p {
     color: #666;
 }
 
+/* styling the image grid */
 .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    margin-top: 20px;
+    gap: 20px;
 }
 
+/* styling the figures */
+.image-grid figure {
+    margin: 0; /* resetting default margin */
+    text-align: center; /* centering figure content */
+}
+
+/* styling the images */
 .image-grid img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* ensures all images fill their container */
+    height: auto; /* maintains aspect ratio */
+    max-width: 100%; /* ensures images don't exceed their container width */
+    max-height: 100%; /* ensures images don't exceed their container height */
+}
+
+/* style for the image captions */
+.image-grid figcaption {
+    margin-top: 10px;
+    font-style: italic;
 }
