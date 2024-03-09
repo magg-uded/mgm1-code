@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .example {
+                padding: 20px;
+                color: white;
+            }
+            /* extra small devices (phones, 600px and below) */
+            @media only screen and (max-width: 600px) {
+                .example {background: red;}
+            }
+
+            /* small devices (portrait tablets and large phones, 600px and above) */
+            @media only screen and (min-width: 600px) {
+                .example {background: rgb(26, 51, 26)}
+            }
+
+            /* medium devices (landscape tablets, 768px and above) */
+            @media only screen and (min-width: 768px) {
+                .example {background: blue;}
+            }
+
+            /* large devices (laptops, desktops, 992px and above) */
+            @media only screen and (min-width: 992px) {
+                .example {background: orange;}
+            }
+
+            /* extra large devices (large laptops and desktops, 1200px and up) */
+            @media only screen and (min-width: 1200px) {
+                .example {background: pink;}
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Typical media query breakpoints</h2>
+        <p class="example">Resize the browser window to see how the background color of the paragraph changes on different screen sizes.</p>
+    </body>
+</html>

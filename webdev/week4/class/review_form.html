@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * { /* wildcard selector that applies style to every element in html doc */
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            body {
+                background-color: lightslategrey;
+            }
+
+            .feedback-container {
+                width: 400px;
+                margin: auto;
+                padding: 20px;
+                border-radius: 8px; /*round each corner of element with a radius of 8 pixels */
+                background-color: #ffffff;
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /*no horizontal offset ie horizontal distance of shadow; no vertical offset; blur radius of 15px ie level of diffusion and softness of shadow; color of shadow */
+                margin-top: 50px;
+            }
+
+            .feedback-title {
+                text-align: center;
+                margin-bottom: 20px;
+                color: #333333;
+                letter-spacing: 2.3px;
+                font-size: 24px;
+            }
+
+            .feedback-description {
+                text-align: center;
+                margin-bottom: 20px;
+                color: #666666;
+                line-height: 1.6;
+            }
+
+            .feedback-input {
+                width: center;
+                padding: 15px;
+                margin-bottom: 20px;
+                border: 1px solid #dddddd;
+                border-radius: 4px;
+            }
+
+            .feedback-button {
+                width: 100%;
+                padding: 15px;
+                background-color: #4caf50;
+                color: white;
+                border: none;
+                cursor: pointer;
+                border-radius: 4px;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .feedback-button:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="feedback-container">
+            <h2 class="feedback-title">REVIEW FORM</h2>
+            <p class="feedback-description">
+                we value your feedback! your comments help us to understand your needs better and improve our services. please take a few moments to share your thoughts.
+            </p>
+            <form>
+                <input 
+                    type="text"
+                    class="feedback-input"
+                    placeholder="your name"
+                    name="name"
+                    required
+                />
+                <input 
+                    type="email"
+                    class="feedback-input"
+                    placeholder="your email"
+                    name="email"
+                    required
+                />
+                <textarea 
+                    class="feedback-input"
+                    placeholder="your feedback"
+                    name="feedback"
+                    required
+                ></textarea>
+                <button type="submit" class="feedback-button">submit</button>
+            </form>
+        </div>
+    </body>
+</html>

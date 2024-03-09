@@ -1,0 +1,31 @@
+<!--control space between items-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr; /* set 3 columns of equal width in grid container */
+                grid-column-gap: 50px; /* specify size of gap between columns in grid container */
+                grid-row-gap: 20px; /* specify size of gap between rows in grid container */
+                background: #6c1697;
+            }
+
+            .item {
+                background-color: lightblue;
+                padding: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--three flex items with gap property set to certain px-->
+        <div class="container">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+        </div>
+    </body>
+</html>

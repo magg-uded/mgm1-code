@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * { /* wildcard selector that applies style to every element in html doc */
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            body {
+                background-color: gray;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .feedback-container {
+                background-color: white;
+                padding: 20px;
+                border-radius: 0px;
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+                width: 400px;
+            }
+
+            .feedback-title {
+                text-align: center;
+                margin-bottom: 20px;
+                color: #333333;
+                letter-spacing: 2.3px;
+                font-size: 24px;
+            }
+
+            .feedback-description {
+                text-align: center;
+                margin-bottom: 20px;
+                color: #666666;
+                line-height: 1.6;
+            }
+
+            .feedback-input {
+                width: center;
+                padding: 15px;
+                margin-bottom: 20px;
+                border: 1px solid #dddddd;
+                border-radius: 8px;
+                box-sizing: border-box; /* ensure padding is included in width */
+            }
+
+            .feedback-button {
+                width: 100%;
+                padding: 15px;
+                background-color: #4caf50;
+                color: white;
+                border: none;
+                cursor: pointer;
+                border-radius: 8px;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .feedback-button:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="feedback-container">
+            <h2 class="feedback-title">REVIEW FORM</h2>
+            <p class="feedback-description">
+                We value your feedback! your comments help us to understand your needs better and improve our services. Please take a few moments to share your thoughts.
+            </p>
+            <form>
+                <input 
+                    type="text"
+                    class="feedback-input"
+                    placeholder="Your name"
+                    name="name"
+                    required
+                >
+                <input 
+                    type="email"
+                    class="feedback-input"
+                    placeholder="your email"
+                    name="email"
+                    required
+                >
+                <textarea 
+                    class="feedback-input"
+                    placeholder="Your feedback"
+                    name="feedback"
+                    required
+                ></textarea>
+                <button type="submit" class="feedback-button">Submit</button>
+            </form
+        </div>
+    </body>
+</html>

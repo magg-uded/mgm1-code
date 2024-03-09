@@ -1,0 +1,32 @@
+<!--change fot size of element on different screen sizes-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            div.example {
+                background-color: lightgray;
+                padding: 20px;
+            }
+
+            @media screen and (min-width: 768px) {
+                div.example {
+                    font-size: 80px;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                div.example {
+                    font-size: 30px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Change the font size of an element on different screen sizes.</h2>
+
+        <div class="example">Example DIV</div>
+
+        <p>When the browser's width is 768px wide or less, set the font-size of DIV to 30px. For higher than 768px set font-size to 80px</p>
+    </body>
+</html>

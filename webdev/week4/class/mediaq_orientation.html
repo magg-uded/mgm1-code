@@ -1,0 +1,22 @@
+<!--media queries can also be used to change layout of a page depending on the orientation of the browser-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                background-color: lightcyan;
+            }
+
+            @media only screen and (orientation: landscape) {
+                body {
+                    background-color: lightblue;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <p>Resize the browser window. When the width of this document is larger than the height, the background color is 'lightblue', otherwise it's 'lightcyan'</p>
+    </body>
+</html>
