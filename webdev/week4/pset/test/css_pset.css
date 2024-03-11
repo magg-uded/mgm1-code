@@ -1,0 +1,94 @@
+/* set consistent starting point for styling and layout across the html document */
+
+/* style the main body */
+body {
+    display: flex; /* set flex property to define various flexbox properties */
+    flex-direction: column; /* stack containers vertically */
+    background-color: #f2f2f2;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; /* set viewport height to 100% to ensure body element and its children fill the entire height of the viewport */
+    overflow: auto; /* enable vertical scrollbar if content overflows */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; /* remove default margin */
+}
+
+/* style the header container */
+.header-container {
+    background-color: #f2f2f2;
+    width: 80%; /* set width of container to 30% of the containing block to ensure screen responsiveness */
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 8px; */
+}
+
+/* style the header */
+.header {
+    color: rgb(9, 2, 2);    
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+
+/* style introduction container */
+.intro-container {
+    background-color: #f2f2f2;
+    width: 80%; 
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+}
+
+/* style intro message */
+.intro {
+    color: #333333;    
+    letter-spacing: 1.2px;
+    font-size: 18px; 
+}
+
+/* style dividing horizontal rule */
+.hr {
+    border: 1px thin lightcoral;
+    width: 80%;
+}
+
+/* style skills title container */
+.skills-title-container {
+    background-color: #f2f2f2;
+    width: 80%; /* set width of container to 30% of the containing block to ensure screen responsiveness */
+    padding: 0px;
+    text-align: left;
+    margin-bottom: 0px; 
+    /* border: 1px solid #6b3838; */
+    border-radius: 8px; 
+}
+
+/* style skills container grid */
+.skills-container {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); /*set 4 columns of equal width in grid container */
+    /* grid-column-gap: 0px; /* specify size of gap between columns */
+    /* grid-row-gap: 0px; /* specify size of gap between rows */
+    /* background-color: rgb(198, 230, 240); */
+    width: 80%; 
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+}
+
+/* style skills items */
+.skills-items {
+    /* background-color: white; */
+    padding: 20px;
+}
+
+/* style skills message */
+.skills-items img {
+    max-width: 100%;
+    max-height: auto;
+}
