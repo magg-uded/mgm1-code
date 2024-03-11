@@ -81,27 +81,25 @@ footer {
     background-color: rgb(12, 132, 132); /*dark background color */
     color: white; /* text color */
     padding: 20px;
+    display: flex;
+    justify-content: center;
     width: 100%;
     font-size: 18px;
     font-weight: bold;
 }
 
-/* use flexbox for layout */
-.footer-container {
-    display: flex;
-    justify-content: center; /* center-align items horizontally */
-}
-
 /* style footer items */
 .footer-item {
     margin: 0 50px; /* add spacing between items */
+    display: flex; /* use flexbox */
+    flex-direction: column; /* stack sub-items vertically */
 }
 
 /* style footer sub-items */
 .footer-subitem {
     display: flex; /* use flexbox */
     flex-direction: column; /* stack items vertically */
-    align-items: center; /* center-align items horizontally */
+    align-items: left; /* center-align items horizontally */
     font-size: 12px;
     font-weight: lighter;
 }
